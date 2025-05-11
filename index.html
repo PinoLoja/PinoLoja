@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -5,27 +6,129 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Início - Seu Negócio</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 56px;
+      height: 56px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+  </style>
 </head>
 <body class="bg-black text-white font-sans">
+
+  <!-- Header -->
   <header class="sticky top-0 z-50 bg-black border-b border-gray-800">
     <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
       <h1 class="text-xl font-bold uppercase tracking-wider">Sua Marca</h1>
       <nav class="flex gap-5 text-sm font-semibold uppercase">
-        <a href="/#produtos" class="hover:text-yellow-400">Produtos</a>
-        <a href="/#servicos" class="hover:text-yellow-400">Serviços</a>
-        <a href="/#ofertas" class="hover:text-yellow-400">Ofertas</a>
-        <a href="/#contato" class="hover:text-yellow-400">Contato</a>
+        <a href="#produtos" class="hover:text-yellow-400">Produtos</a>
+        <a href="#servicos" class="hover:text-yellow-400">Serviços</a>
+        <a href="#ofertas" class="hover:text-yellow-400">Ofertas</a>
+        <a href="#contato" class="hover:text-yellow-400">Contato</a>
       </nav>
     </div>
   </header>
+
+  <!-- Hero -->
   <section class="relative bg-cover bg-center py-20 px-6 text-center" style="background-image: url('https://via.placeholder.com/1920x600');">
     <div class="bg-black bg-opacity-60 p-10 rounded-lg inline-block">
       <h2 class="text-4xl font-extrabold mb-2">Promoção de Acessórios & Consertos</h2>
       <p class="text-lg text-gray-300">Combine economia e serviço de qualidade no mesmo lugar.</p>
     </div>
   </section>
+
+  <!-- Produtos -->
+  <section id="produtos" class="py-16 px-6 bg-gray-900">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-2xl font-bold mb-6">Produtos em Destaque</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-gray-800 p-4 rounded-lg text-center">
+          <img src="https://via.placeholder.com/300x300" class="mx-auto mb-4" alt="Relógio">
+          <h4 class="font-bold">Relógio Masculino</h4>
+          <p class="text-yellow-400">R$ 199,90</p>
+          <a href="/relogios" class="text-sm text-blue-400 underline">Ver mais</a>
+        </div>
+        <div class="bg-gray-800 p-4 rounded-lg text-center">
+          <img src="https://via.placeholder.com/300x300" class="mx-auto mb-4" alt="Capinha">
+          <h4 class="font-bold">Capinha para Celular</h4>
+          <p class="text-yellow-400">R$ 29,90</p>
+          <a href="/eletronicos" class="text-sm text-blue-400 underline">Ver todos eletrônicos</a>
+        </div>
+        <div class="bg-gray-800 p-4 rounded-lg text-center">
+          <img src="https://via.placeholder.com/300x300" class="mx-auto mb-4" alt="Caixinha de Som">
+          <h4 class="font-bold">Caixinha de Som Bluetooth</h4>
+          <p class="text-yellow-400">R$ 89,90</p>
+          <a href="/eletronicos" class="text-sm text-blue-400 underline">Ver todos eletrônicos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="py-16 px-6 bg-black">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-2xl font-bold mb-6">Serviços Técnicos</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h4 class="font-bold">Troca de Tela</h4>
+          <p class="text-gray-400">Serviço com garantia de 90 dias e execução expressa.</p>
+        </div>
+        <div>
+          <h4 class="font-bold">Limpeza Interna</h4>
+          <p class="text-gray-400">Evite superaquecimento e melhore a performance do aparelho.</p>
+        </div>
+        <div>
+          <h4 class="font-bold">Troca de Bateria</h4>
+          <p class="text-gray-400">Original ou compatível premium. Verificamos na hora.</p>
+        </div>
+        <div>
+          <h4 class="font-bold">Película Aplicada</h4>
+          <p class="text-gray-400">Proteção em segundos com acabamento perfeito.</p>
+        </div>
+        <div>
+          <h4 class="font-bold">Gravação a Laser em Copo Stanley</h4>
+          <p class="text-gray-400">Personalize seu copo com nomes, logos ou frases. Gravação permanente com acabamento premium.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ofertas -->
+  <section id="ofertas" class="py-16 px-6 bg-yellow-500 text-black">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-2xl font-extrabold mb-4">Ofertas Especiais</h3>
+      <p class="mb-6">Aproveite nossos combos promocionais por tempo limitado.</p>
+      <a href="#contato" class="bg-black text-white px-6 py-3 rounded-full font-bold hover:bg-gray-800">Ver Combos</a>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-16 px-6 bg-gray-900">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-2xl font-bold mb-4">Entre em Contato</h3>
+      <p class="mb-6 text-gray-400">Fale direto no WhatsApp para orçamentos ou agendamentos.</p>
+      <a href="https://wa.me/5591999999999" target="_blank" class="inline-block bg-green-500 text-black px-6 py-3 rounded-full font-bold hover:bg-green-600">Chamar no WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Botão Flutuante WhatsApp -->
+  <a href="https://wa.me/5591999999999" class="whatsapp-btn" target="_blank" aria-label="Whatsapp">💬</a>
+
+  <!-- Footer -->
   <footer class="text-center text-gray-500 text-sm py-6 bg-black border-t border-gray-700">
     © 2025 Sua Marca — Todos os direitos reservados.
   </footer>
+
 </body>
 </html>
